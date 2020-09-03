@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ayush Kumar}{Shaw}{ \urlstyle{same}\href{https://www.linkedin.com/in/ayush-shaw/}{linkedin.com/in/ayush-shaw/}\\
+\href{mailto:ayushshawz@gmail.com}{ayushshawz@gmail.com} | \href{tel:919831284491}{+91 98312-84491}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} HTML \textbullet{} CSS \textbullet{} Javascript \\
+\textbullet{} C \textbullet{} C++ \textbullet{} Python 
+\textbullet{} Shell \textbullet{} SQL \\
+
+\subsection{Frameworks}
+Spring \textbullet{} Spring Boot\\
+
+\subsection{Tools}
+Git \textbullet{} GitHub  \textbullet{} GitLab  \textbullet{} Mockito \\ \textbullet{} JUnit \textbullet{} Apache Tomcat  \textbullet{} LaTeX \\ \textbullet{} jQuery \textbullet{} JDBC \textbullet{} Gradle \textbullet{} Wireshark \\ \textbullet{} Postman\textbullet{} IntelliJ IDEA \textbullet{} VSCode \\ \textbullet{} Eclipse \textbullet{} Sublime Text
+\sectionsep
+
+\subsection{DBMS}
+Oracle \textbullet{} MySQL \textbullet{} MongoDB
+\sectionsep
+
+\subsection{Platforms}
+Linux \textbullet{} GCP 
+\sectionsep
+
+\subsection{Soft Skills}
+Leadership \textbullet{} Writing \\ 
+\textbullet{} Time Management
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/ayush-shaw}{\bf ayush-shaw} \\
+GitHub://  \href{https://github.com/Ak-Shaw}{\bf Ak-Shaw} \\
+Twitter://  \href{https://twitter.com/Ayush_Shaw_z}{\bf @Ayush\_Shaw\_z} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BGI - SDET}
+\descript{B. Tech in Computer Science \\ and Engineering}
+\location{June 2021 | West Bengal, India}
+\location{ Cum. GPA: 7.8 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+\sectionsep
+Database Management System \\
+Computer Networks \\
+Operating Systems \\
+Object Oriented Programming \\
+Data Structures \& Algorithms \\
+Design \& Analysis of Algorithms \\
+Digital Electronics \\
+Discrete Mathematics \\
+Computer Organisation \\
+Computer Architecture \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Crio.Do}
+\descript{| Student Developer ( Crio Launch 2020 ) }
+\location{Jan 2020 - Apr 2020 | Remote}
+Contributed to these projects: a secure file-sharing service, a visual stock portfolio analyzer, and an online IDE.\\
+\textbf{Portfolio showcasing contributions:} \href{https://criodo.github.io/Crio-Launch-Feb-2020-ayushshawz/}{criodo.github.io/Crio-Launch-Feb-2020-ayushshawz/}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Visual stock portfolio analyzer}\\
+\location{Mar 2020 – Apr 2020 | Guided Individual Project}
+\sectionsep
+\begin{tightemize}
+\item Developed to help portfolio managers make trade recommendations for their clients.
+\item Utilized stock quote services via \textbf{REST APIs}.
+\item Published the portfolio manager library as a \textbf{JAR}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Food ordering application}\\
+\location{Jan 2020 – Aug 2020 | Guided Individual Project}
+\begin{tightemize}
+\item Built a distributed \textbf{Java} back-end.
+\item Adhered to \textbf{MVCS} layering. 
+\item \textbf{MongoDB} aided storage. 
+\item Utilized \textbf{JUnit} and \textbf{Mockito} for testing.
+\item Executed Facebook Share API, Pinterest Share API, and Clarifai API.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Secure file-sharing service}\\
+\location{Feb 2020 – Apr 2020 | Guided Individual Project}
+\begin{tightemize}
+\item Installed a customized version of the \textbf{VSFTPD} server.
+\item Debugged performance issues.
+\item Troubleshot network issues by collecting and analyzing \textbf{pcap} files using \textbf{Wireshark}. 
+\item Enabled end-to-end encryption by creating \textbf{SSL} certificates.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Quiz application}\\
+\location{Aug 2020 | Guided Individual Project}
+\begin{tightemize}
+\item Created \textbf{API} for \textbf{GET} and \textbf{POST} request.
+\item Utilized \textbf{Spring Boot} along with \textbf{MongoDB}.
+\item Usage of \textbf{Postman} verified the implementation of the APIs.
+\item Wrote unit test cases to demonstrate code reliability by utilizing \textbf{JUnit} and \textbf{Mockito}.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Accomplishments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Accomplishments} 
+\sectionsep
+\subsection{TCS Codevita Season 8 Round 1 | India zone 1}
+\subsection{RANK: 574 OUT OF 2562}
+\location{Aug 2019}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\sectionsep
+\subsection{Problem Solving Through Programming in C}
+NPTEL18CS10S3510040 \\
+\location{May 2018}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
